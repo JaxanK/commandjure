@@ -1,0 +1,466 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd c:\Workspace\commandjure & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:65409 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉commandjure.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉commandjure.core꞉> 
+; Jack-in done.
+clj꞉commandjure.core꞉> (keyword "yo this is a keyword")
+:yo this is a keyword
+clj꞉commandjure.core꞉> 
+(set '(1 2 3 4))
+#{1 4 3 2}
+clj꞉commandjure.core꞉> (#{1 2 3} 2)
+2
+clj꞉commandjure.core꞉> 
+#'commandjure.UserInput/getoption
+clj꞉commandjure.UserInput꞉> 
+#'commandjure.UserInput/ConfigAtom
+clj꞉commandjure.UserInput꞉> 
+"blow me"
+clj꞉commandjure.core꞉> 
+d
+clj꞉commandjure.UserInput꞉> 
+; Execution error (ArityException) at commandjure.UserInput/eval8072 (form-init13131780925467477392.clj:5).
+; Wrong number of args (0) passed to: clojure.core/read-string
+clj꞉commandjure.UserInput꞉> 
+; Execution error (NullPointerException) at commandjure.UserInput/eval8074 (form-init13131780925467477392.clj:11).
+; Cannot invoke "Object.getClass()" because "target" is null
+clj꞉commandjure.UserInput꞉> 
+nil
+clj꞉commandjure.UserInput꞉> 
+nil
+clj꞉commandjure.UserInput꞉> 
+; Execution error (NullPointerException) at commandjure.UserInput/eval8080 (form-init13131780925467477392.clj:10).
+; Cannot invoke "Object.getClass()" because "target" is null
+clj꞉commandjure.UserInput꞉> 
+nil
+clj꞉commandjure.UserInput꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd c:\Workspace\commandjure & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:50651 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉commandjure.core꞉> 
+clj꞉commandjure.core꞉> 
+; Jack-in done.
+clj꞉commandjure.core꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x7d01c7ff]
+clj꞉commandjure.GUI꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\GUI.clj:1:7973).
+; No such var: commandjure.core/EndProgram
+clj꞉commandjure.GUI꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\GUI.clj:24:29).
+; No such var: AppControls/EndProgram
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.ApplicationControls꞉> 
+#'commandjure.ApplicationControls/EndProgram
+clj꞉commandjure.ApplicationControls꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x7a60876d]
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\CommandProcessor.clj:8:4).
+; No such namespace: thread
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.GUI/*state
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+""
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.CommandProcessor/CommandLineReaderProcess
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.CommandProcessor/startCommandLineProcess
+clj꞉commandjure.CommandProcessor꞉> 
+#future[{:status :ready, :val #function[commandjure.CommandProcessor/CommandLineReaderProcess]} 0x421cb6b7]
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x2f8431e8]
+clj꞉commandjure.GUI꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Info text to appear here"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Info text to appear here"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+#atom[true 0x500551f0]
+clj꞉commandjure.CommandProcessor꞉> 
+false
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+#future[{:status :ready, :val #function[commandjure.CommandProcessor/CommandLineReaderProcess]} 0x4900af0f]
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Info text to appear here"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Info text to appear here"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+"Jax"
+clj꞉commandjure.CommandProcessor꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"}
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+#atom[true 0x6ed9996b]
+clj꞉commandjure.CommandProcessor꞉> 
+false
+clj꞉commandjure.CommandProcessor꞉> 
+"Jax"
+clj꞉commandjure.CommandProcessor꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Invalid Input"}
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Invalid Input"} 0x4f07e177]
+clj꞉commandjure.GUI꞉> 
+"Jax"
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Invalid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"}
+clj꞉commandjure.CommandProcessor꞉> 
+false
+clj꞉commandjure.CommandProcessor꞉> 
+true
+clj꞉commandjure.CommandProcessor꞉> 
+#future[{:status :ready, :val #function[commandjure.CommandProcessor/CommandLineReaderProcess]} 0x1377b477]
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Ryan", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Ryan", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+#future[{:status :pending, :val nil} 0x2cf0fe51]
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Ryan", :CommandLog "This is the command line", :CommandLineBuffer "Invalid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+#atom[{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Jax", :CommandLog "This is the command line", :CommandLineBuffer "Totally Valid Input"} 0x4f07e177]
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.GUI/root
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x51e10c85]
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x1b60248]
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x7fcc15eb]
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x2d46b9c9]
+clj꞉commandjure.GUI꞉> 
+; java.lang.ClassCastException: class javafx.event.ActionEvent cannot be cast to class java.lang.String (javafx.event.ActionEvent is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+; 	at cljfx.fx.text_input_control$fn__11763.invokeStatic(text_input_control.clj:23)
+; 	at cljfx.fx.text_input_control$fn__11763.invoke(text_input_control.clj:22)
+; 	at cljfx.mutator$setter$fn__7679.invoke(mutator.clj:32)
+; 	at cljfx.mutator$eval7606$fn__7649$G__7595__7662.invoke(mutator.clj:14)
+; 	at cljfx.prop$replace_BANG_.invokeStatic(prop.clj:40)
+; 	at cljfx.prop$replace_BANG_.invoke(prop.clj:38)
+; 	at cljfx.composite$advance_composite_component$fn__10345$fn__10348.invoke(composite.clj:68)
+; 	at clojure.core.protocols$iter_reduce.invokeStatic(protocols.clj:49)
+; 	at clojure.core.protocols$fn__8230.invokeStatic(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8230.invoke(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8178$G__8173__8191.invoke(protocols.clj:13)
+; 	at clojure.core$reduce.i
+; nvokeStatic(core.clj:6886)
+; 	at clojure.core$reduce.invoke(core.clj:6868)
+; 	at cljfx.composite$advance_composite_component$fn__10345.invoke(composite.clj:55)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.composite$advance_composite_component.invokeStatic(composite.clj:48)
+; 	at cljfx.composite$advance_composite_component.invoke(composite.clj:43)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$reify__7869$fn__7870.invoke(lifecycle.clj:48)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$reify__7869.advance(lifecycle.clj:48)
+; 	at cljfx.lifecycle$wrap_extra_props$fn__8021.invoke(lifecycle.clj:372)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$wrap_many$fn__7970$fn__7974.invoke(lifecycle.clj:302)
+; 	at clojure.core.protocols$iter_reduce.invokeStatic(protocols.clj:49)
+; 	at clojur
+; e.core.protocols$fn__8230.invokeStatic(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8230.invoke(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8178$G__8173__8191.invoke(protocols.clj:13)
+; 	at clojure.core$reduce.invokeStatic(core.clj:6886)
+; 	at clojure.core$reduce.invoke(core.clj:6868)
+; 	at cljfx.lifecycle$wrap_many$fn__7970.invoke(lifecycle.clj:296)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.composite$advance_composite_component$fn__10345$fn__10348.invoke(composite.clj:64)
+; 	at clojure.core.protocols$iter_reduce.invokeStatic(protocols.clj:49)
+; 	at clojure.core.protocols$fn__8230.invokeStatic(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8230.invoke(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8178$G__8173__8191.invoke(protocols.clj:13)
+; 	at clojure.core$reduce.invokeStatic(core.clj:6886)
+; 	at clojure.core$reduce.invoke(core.clj:6868)
+; 	at cljfx.composite$advance_composite_component$fn__10345.invoke(composite.clj:55)
+; 	at clojure.core$update.invok
+; eStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.composite$advance_composite_component.invokeStatic(composite.clj:48)
+; 	at cljfx.composite$advance_composite_component.invoke(composite.clj:43)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$reify__7869$fn__7870.invoke(lifecycle.clj:48)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$reify__7869.advance(lifecycle.clj:48)
+; 	at cljfx.composite$advance_composite_component$fn__10345$fn__10348.invoke(composite.clj:64)
+; 	at clojure.core.protocols$iter_reduce.invokeStatic(protocols.clj:49)
+; 	at clojure.core.protocols$fn__8230.invokeStatic(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8230.invoke(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8178$G__8173__8191.invoke(protocols.clj:13)
+; 	at clojure.core$reduce.invokeStatic(core.clj:6886)
+; 	at clojure.core$reduce.invoke(core.clj:6868)
+; 	at cljfx.composite$adva
+; nce_composite_component$fn__10345.invoke(composite.clj:55)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.composite$advance_composite_component.invokeStatic(composite.clj:48)
+; 	at cljfx.composite$advance_composite_component.invoke(composite.clj:43)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$reify__7869$fn__7870.invoke(lifecycle.clj:48)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$reify__7869.advance(lifecycle.clj:48)
+; 	at cljfx.composite$advance_composite_component$fn__10345$fn__10348.invoke(composite.clj:64)
+; 	at clojure.lang.ArraySeq.reduce(ArraySeq.java:119)
+; 	at clojure.core$reduce.invokeStatic(core.clj:6885)
+; 	at clojure.core$reduce.invoke(core.clj:6868)
+; 	at cljfx.composite$advance_composite_component$fn__10345.invoke(composite.clj:55)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$updat
+; e.invoke(core.clj:6223)
+; 	at cljfx.composite$advance_composite_component.invokeStatic(composite.clj:48)
+; 	at cljfx.composite$advance_composite_component.invoke(composite.clj:43)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$wrap_on_delete$fn__8082.invoke(lifecycle.clj:441)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$reify__7869$fn__7870.invoke(lifecycle.clj:48)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$reify__7869.advance(lifecycle.clj:48)
+; 	at cljfx.lifecycle$wrap_dynamic_fn$fn__7887$fn__7890.invoke(lifecycle.clj:90)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$wrap_dynamic_fn$fn__7887.invoke(lifecycle.clj:90)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$reify__7869$fn__7870.invoke(lifecycle.clj:4
+; 8)
+; 	at clojure.core$update.invokeStatic(core.clj:6231)
+; 	at clojure.core$update.invoke(core.clj:6223)
+; 	at cljfx.lifecycle$reify__7869.advance(lifecycle.clj:48)
+; 	at cljfx.lifecycle$fn__7875.invokeStatic(lifecycle.clj:64)
+; 	at cljfx.lifecycle$fn__7875.invoke(lifecycle.clj:62)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.lifecycle$wrap_map_desc$fn__8089.invoke(lifecycle.clj:452)
+; 	at cljfx.lifecycle$eval7796$fn__7797$G__7785__7808.invoke(lifecycle.clj:17)
+; 	at cljfx.renderer$render_component.invokeStatic(renderer.clj:65)
+; 	at cljfx.renderer$render_component.invoke(renderer.clj:49)
+; 	at cljfx.renderer$create$fn__8438.invoke(renderer.clj:79)
+; 	at cljfx.renderer$perform_render$fn__8372.invoke(renderer.clj:23)
+; 	at cljfx.renderer$perform_render.invokeStatic(renderer.clj:22)
+; 	at cljfx.renderer$perform_render.invoke(renderer.clj:14)
+; 	at cljfx.renderer$request_render$fn__8414$fn__8418.invoke(renderer.clj:46)
+; 	at cljfx.renderer$request_render$fn__8414.invoke(renderer.clj
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x84f1494]
+clj꞉commandjure.GUI꞉> (cat "yo" "yip")
+; Execution error (ArityException) at commandjure.GUI/eval12082 (form-init3834464553621271875.clj:340).
+; Wrong number of args (2) passed to: clojure.core/cat
+clj꞉commandjure.GUI꞉> (concat "yo" "yip")
+(\y \o \y \i \p)
+clj꞉commandjure.GUI꞉> (str "yo" "yip")
+"yoyip"
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x199a3131]
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x5dec6aaa]
+clj꞉commandjure.GUI꞉> 
+; Execution error (IllegalAccessError) at commandjure.GUI/eval12159$loading (form-init3834464553621271875.clj:1).
+; *state does not exist
+clj꞉commandjure.GUI꞉> 
+#'commandjure.GUI_Functions/Alert
+clj꞉commandjure.GUI_Functions꞉> 
+#'commandjure.Commands/Ryan
+clj꞉commandjure.Commands꞉> 
+"2 + 2 is 4"
+clj꞉commandjure.Commands꞉> 
+; Execution error (ArithmeticException) at commandjure.Commands/eval12265 (form-init3834464553621271875.clj:11).
+; Divide by zero
+clj꞉commandjure.Commands꞉> 
+; Syntax error macroexpanding clojure.core/ns at (c:\Workspace\commandjure\src\commandjure\CommandProcessor.clj:1:1).
+; ((:require [commandjure.GUI :refer [*state]] [clojure.core/str :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉commandjure.CommandProcessor꞉> 
+; Execution error (FileNotFoundException) at commandjure.CommandProcessor/eval12269$loading (form-init3834464553621271875.clj:1).
+; Could not locate clojure/core/str__init.class, clojure/core/str.clj or clojure/core/str.cljc on classpath.
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\CommandProcessor.clj:39:40).
+; No such var: cmd/Pierce
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.Commands/Pierce
+clj꞉commandjure.Commands꞉> 
+#'commandjure.CommandProcessor/RunCommand
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.Commands/Pierce
+clj꞉commandjure.Commands꞉> 
+#'commandjure.CommandProcessor/RunCommand
+clj꞉commandjure.CommandProcessor꞉> 
+; Execution error (IllegalAccessError) at commandjure.GUI/eval12424$loading (form-init3834464553621271875.clj:1).
+; *state does not exist
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x1f8997c0]
+clj꞉commandjure.GUI꞉> 
+#'commandjure.Configuration/*state
+clj꞉commandjure.Configuration꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Pierce", :CommandLog "This is the command line\nyo\nyoss\nJax\nRyan\nRyan\nRyan\nJax\nPierce", :CommandLineBuffer "To be determined!"}
+clj꞉commandjure.CommandProcessor꞉> 
+; Execution error (IllegalStateException) at commandjure.CommandProcessor/eval12466$loading (form-init3834464553621271875.clj:1).
+; *state already refers to: #'commandjure.GUI/*state in namespace: commandjure.CommandProcessor
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.CommandProcessor꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Pierce", :CommandLog "This is the command line\nyo\nyoss\nJax\nRyan\nRyan\nRyan\nJax\nPierce", :CommandLineBuffer "To be determined!"}
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.Configuration/*state
+clj꞉commandjure.Configuration꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :InputStream "Pierce", :CommandLog "This is the command line\nyo\nyoss\nJax\nRyan\nRyan\nRyan\nJax\nPierce", :CommandLineBuffer "To be determined!"}
+clj꞉commandjure.CommandProcessor꞉> 
+; Execution error (IllegalStateException) at commandjure.CommandProcessor/eval12510$loading (form-init3834464553621271875.clj:1).
+; *state already refers to: #'commandjure.GUI/*state in namespace: commandjure.CommandProcessor
+clj꞉commandjure.CommandProcessor꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd c:\Workspace\commandjure & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:52531 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉commandjure.core꞉> 
+clj꞉commandjure.core꞉> 
+; Jack-in done.
+clj꞉commandjure.core꞉> 
+{:title "Designer", :showing true, :WindowWidth 500, :WindowHeight 500, :CommandMaps {:Jax {:name "Jax", :call #function[commandjure.Commands/Jax], :description "The best Function Every"}, :Ryan {:name "Ryan", :call #function[commandjure.Commands/Ryan], :description "Did I find a way to divide by zero? Call me and find out!"}, :Pierce {:name "Pierce", :call #function[commandjure.Commands/Pierce], :description "TBD"}}, :InputStream "", :CommandLog "This is the command line", :CommandLineBuffer "Info text to appear here"}
+clj꞉commandjure.CommandProcessor꞉> 
+{:Jax {:name "Jax", :call #function[commandjure.Commands/Jax], :description "The best Function Every"}, :Ryan {:name "Ryan", :call #function[commandjure.Commands/Ryan], :description "Did I find a way to divide by zero? Call me and find out!"}, :Pierce {:name "Pierce", :call #function[commandjure.Commands/Pierce], :description "TBD"}}
+clj꞉commandjure.CommandProcessor꞉> 
+#{:Pierce :Jax :Ryan}
+clj꞉commandjure.CommandProcessor꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\CommandProcessor.clj:38:44).
+; Unable to resolve symbol: cmdname in this context
+clj꞉commandjure.CommandProcessor꞉> 
+#'commandjure.CommandProcessor/RunCommand
+clj꞉commandjure.CommandProcessor꞉> 
+; Syntax error compiling at (c:\Workspace\commandjure\src\commandjure\GUI.clj:61:5).
+; Unable to resolve symbol: RenderSetupAndRun in this context
+clj꞉commandjure.GUI꞉> 
+nil
+clj꞉commandjure.GUI꞉> 
+#promise[{:status :pending, :val nil} 0x566e2b07]
+clj꞉commandjure.GUI꞉> 
+#'commandjure.Commands/Cody
+clj꞉commandjure.Commands꞉> 
+#'commandjure.Configuration/*state
+clj꞉commandjure.Configuration꞉> 
+#promise[{:status :pending, :val nil} 0x34a1ad14]
+clj꞉commandjure.GUI꞉> 
+#'commandjure.CommandProcessor/RunCommand
+clj꞉commandjure.CommandProcessor꞉> 
+nil
+clj꞉commandjure.GUI꞉> 

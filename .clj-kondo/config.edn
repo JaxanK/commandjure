@@ -1,0 +1,15 @@
+
+{:linters {:missing-else-branch {:level :off}
+           :redundant-do {:level :off}
+           :refer-all {:level :off}
+
+           ;:unused-namespace {:level :off}
+           :unused-referred-var {:level :off}
+           :unused-binding {:level :off}
+           :clojure-lsp/unused-public-var {:level :off}
+           :namespace-name-mismatch {:level :off}
+           :inline-def {:level :off}}
+ :lint-as {thrawn.JaxExtension/deflet clojure.core/let
+           ghostwheel.core/>defn clojure.core/defn
+           ghostwheel.core/>fdef clojure.core/defn
+           ghostwheel.core/>defn- clojure.core/defn-}}
