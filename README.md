@@ -17,20 +17,22 @@ Idea is to decrease overall program complexity at the cost of a higher learning 
 ## This library is not ready for use yet! 
 
 
-## Goals
-1) Provide a command line interface that narrows the available selections as the user types a command name
-2) Facilitate the quick calling of commands using pseudonames and history (i.e. typing "L" could autofill to the "Line" command)
-3) Provide a series of useful user input functions that can be called from any function to get user input on demand. Also allow for alternate methods for user to specify data
-4) Add HotKey options similar to Emacs (maybe eventually add which-key functionality)
-5) Provide Scripting ability for code to be entered into command line instead of commands (i.e. when wrapped in parenthesis) 
-        & add flags to command calls 
-        & add scriptable function for (command _ _Pause _ _ _) for sequential user inputs to commands... 
-6) Provide console for printing program messages to
-7) Eventually provide more options for integrating with terminal and to become independent of GUI (i.e remove CLJFX specification)
-8) Faciliate user selection of options using tab/shift-tab or arrow keys (similar to emacs)
-9) Integrate environment variables to make program configuration easy
+## Design Goals/Options
+1)  Provide a command line interface that narrows the available selections as the user types a command name (both with commands and selection options)
+2)  Facilitate the quick calling of commands using pseudonames and history (i.e. typing "L" could autofill to the "Line" command)
+3)  Provide a series of useful user input functions that can be called from any function to get user input on demand. Also allow for alternate methods for user to specify data
+4)  Add HotKey options similar to Emacs (maybe eventually add which-key functionality)
+5)  Provide Scripting ability for code to be entered into command line instead of commands (i.e. when wrapped in parenthesis) 
+         & add flags to command calls 
+         & add scriptable function for (command _ _Pause _ _ _) for sequential user inputs to commands... 
+6)  Provide console for printing program messages to
+7)  Eventually provide more options for integrating with terminal and to become independent of GUI (i.e remove CLJFX specification)
+8)  Faciliate user selection of options using tab/shift-tab or arrow keys (similar to emacs)
+9)  Integrate environment variables to make program configuration easy
 10) Expand to cljs and cljr
-11) Have some fun!
+11) Provide command selection history... aka last-used-option defaults, user preference overrides etc.
+12) Provide Intermediary interface for easy switching to a GUI interface over the command interface
+13) Have some fun!
 
 ## Usage
 
