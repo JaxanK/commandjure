@@ -10,3 +10,11 @@
 (defn Pierce []
   (guifns/Alert "Change this text to achieve immortality")
   )
+
+(def commands
+  {"Jax" Jax
+   "Ryan" Ryan
+   "Pierce" Pierce})
+
+(defn get-command-names []
+  (keys commands))
