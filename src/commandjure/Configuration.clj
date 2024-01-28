@@ -6,25 +6,33 @@
   {:children {} :is-end-of-word false})
 
 (defn insert-command [trie command]
-  (reduce (fn [node char]
-            (let [child (get-in node [:children char] (create-node))]
-              (assoc-in node [:children char] child)))
-          trie (concat command [nil])))
+  (let [command-chars (concat command [nil])]  ; Including nil to mark the end of a command
+    (reduce (fn [current-trie char]
+              (let [path (reduce (fn [p c] (conj p :children c)) [] command-chars) 
+                    current-node (get-in current-trie path (create-node))
+                    updated-node (if (= char nil)
+                                   (assoc current-node :is-end-of-word true) current-node)]
+                (assoc-in current-trie path updated-node)))
+            trie command-chars)))
 
 (defn init-trie [commands]
   (reduce insert-command (create-node) commands))
 
 (def trie (atom (init-trie (cmd/get-command-names))))
 
-(defn autocomplete [node prefix]
-  (let [find-words (fn find-words [node prefix]
-                     (if (:is-end-of-word node)
-                       [prefix]
-                       (reduce-kv (fn [acc char child-node]
-                                    (concat acc (when char (find-words child-node (str prefix char)))))
-                                  []
-                                  (:children node))))]
-    (find-words (get-in node [:children] prefix) prefix)))
+(defn find-words [node prefix]
+  (if (:is-end-of-word node)
+    [prefix]
+    (reduce-kv (fn [acc char child-node]
+                 (concat acc (find-words child-node (str prefix char))))
+               []
+               (:children node))))
+
+(defn autocomplete [trie prefix]
+  (let [start-node (reduce (fn [current-node char]
+                             (get-in current-node [:children char])) 
+                           trie prefix)]
+    (find-words start-node prefix)))
 
 (def *state (atom {:title "Designer"
                    :showing true

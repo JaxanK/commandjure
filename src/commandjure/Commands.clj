@@ -11,10 +11,17 @@
   (guifns/Alert "Change this text to achieve immortality")
   )
 
+(defn JohnnyCage []
+  (guifns/Alert "Fatality"))
+
 (def commands
-  {"Jax" Jax
+  {
+   "Jax" Jax
    "Ryan" Ryan
-   "Pierce" Pierce})
+   "Pierce" Pierce
+   "Johnny Cage" JohnnyCage
+   }
+  )
 
 (defn get-command-names []
   (keys commands))
